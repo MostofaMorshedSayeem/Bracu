@@ -28,7 +28,7 @@ k) return     : INVALID identifier ( identifier is a reserved keyword in Java)
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         int num = 10;
@@ -60,7 +60,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         int num1 = 10;
@@ -95,7 +95,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
          int num1 = 10;
@@ -132,7 +132,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
          double num1 = 10.47;
@@ -171,7 +171,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
          int num1 = 10;
@@ -210,7 +210,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
         
         String str1 = "Hello";
@@ -267,7 +267,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         double radius = 4.0;
@@ -302,7 +302,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         int num = 7530;
@@ -335,7 +335,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         double inch = 1000;
@@ -367,7 +367,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         int a = 10;
@@ -417,7 +417,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
        
@@ -469,7 +469,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
         
         long min = 3456789;
@@ -505,7 +505,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         int a = 2;
@@ -543,7 +543,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
 
         int sid = 24110031;
@@ -586,7 +586,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test {
+public class main {
     public static void main(String[] args) {
         double  a = 8.0;  //given
         double  b = 3.0;  //given 
@@ -625,7 +625,7 @@ public class Test {
 ``````````````````````
 
 
-public class Test{
+public class main{
     public static void main(String[] args) {
         double a = 4.5; // given
         double b = 9.5; // given
