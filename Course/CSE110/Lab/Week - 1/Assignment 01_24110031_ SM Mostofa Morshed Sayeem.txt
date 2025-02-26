@@ -39,6 +39,17 @@ public class Test {
 }
 
 
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                                                                                |
+|  The number to print is : 10                                                                   |
+|                                                                                                |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
 ================================================================================================================================================================
 
 
@@ -55,12 +66,23 @@ public class Test {
         int num1 = 10;
         int num2 = 20;
 
-        System.out.println("The first number is      : " + num1 + 
-                           "\nThe second number is     : " + num2 + 
-                           "\nThe sum of both number is: " + (num1 + num2));
+        System.out.println("The first number is        : " + num1 + 
+                           "\nThe second number is       : " + num2 + 
+                           "\nThe sum of both number is  : " + (num1 + num2));
 
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     The first number is        : 10                                                            |
+|     The second number is       : 20                                                            |
+|     The sum of both number is  : 30                                                            |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -73,21 +95,31 @@ public class Test {
 ``````````````````````
 
 
-
 public class Test {
     public static void main(String[] args) {
 
          int num1 = 10;
          int num2 = 20;
 
-        System.out.println("The first number is      : " + num1 + 
-                           "\nThe second number is     : " + num2 + 
-                           "\nThe product of both number is: " + (num1 * num2) + 
-                           "\nThe division of both number is: " + (num1 / num2));
+        System.out.println("The first number is             : " + num1 + 
+                           "\nThe second number is            : " + num2 + 
+                           "\nThe product of both number is   : " + (num1 * num2) + 
+                           "\nThe division of both number is  : " + (num1 / num2));
 
     }
 }
 
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    The first number is             : 10                                                        |
+|    The second number is            : 20                                                        |
+|    The product of both number is   : 200                                                       |
+|    The division of both number is  : 0                                                         |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -108,11 +140,25 @@ public class Test {
 
         System.out.println("The first number is            : " + num1 + 
                            "\nThe second number is           : " + num2 + 
+                           "\nThe sum of both number is      : " + (num1 + num2) +
                            "\nThe product of both number is  : " + (num1 * num2) + 
                            "\nThe division of both number is : " + (num1 / num2));
 
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    The first number is            : 10.47                                                      |
+|    The second number is           : 20.22                                                      |
+|    The sum of both number is      : 30.689999999999998                                         |
+|    The product of both number is  : 211.7034                                                   |
+|    The division of both number is : 0.5178041543026707                                         |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -128,11 +174,12 @@ public class Test {
 public class Test {
     public static void main(String[] args) {
 
-         int num1 = 10.47;
+         int num1 = 10;
          double num2 = 20.22;
 
         System.out.println("The first number is            : " + num1 + 
                            "\nThe second number is           : " + num2 + 
+                            "\nThe sum of both number is      : "+ (num1 + num2) +
                            "\nThe product of both number is  : " + (num1 * num2) + 
                            "\nThe division of both number is : " + (num1 / num2));
 
@@ -144,10 +191,12 @@ public class Test {
 |                                   OUTPUT                                                       |
 |                                                                                                |
 |````````````````````````````````````````````````````````````````````````````````````````````````|
-|   Test.java:4: error: incompatible types: possible lossy conversion from double to int         |
-|            int num1 = 10.47;                                                                   |
-|                    ^                                                                           |
-|   1 error                                                                                      |
+|   The first number is            : 10                                                          |
+|   The second number is           : 20.22                                                       |
+|   The sum of both number is      : 30.22                                                       |
+|   The product of both number is  : 202.2                                                       |
+|   The division of both number is : 0.49455984174085066                                         |
+|                                                                                                |
 ``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
@@ -164,15 +213,48 @@ public class Test {
 public class Test {
     public static void main(String[] args) {
         
-        String str1 = "Hello ";
+        String str1 = "Hello";
         String str2 = "Human";
 
         System.out.printf("The first string is  : %s%n", str1);
         System.out.printf("The second string is : %s%n", str2);
-        System.out.printf("The output should be : %s%n", str1 + str2);
+        System.out.printf("The output should be : %s%n%n", str1 + str2);
+
+        int integer_number = 10;
+        String string_variable = "USD";
+
+        System.out.printf("The integer value is  : %d%n", integer_number);
+        System.out.printf("The string value is   : %s%n", string_variable);
+        System.out.printf("The output should be  : %s%n%n", integer_number + string_variable);
+
+        String string_variable2 = "Age";
+        int integer_number2 = 22;
+
+        System.out.printf("The second string value is   : %s%n", string_variable2);
+        System.out.printf("The second integer value is  : %d%n", integer_number2);
+        System.out.printf("The output should be         : %s%n", string_variable2 + integer_number2);
 
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    The first string is  : Hello                                                                |
+|    The second string is : Human                                                                |
+|    The output should be : HelloHuman                                                           |
+|                                                                                                |
+|    The integer value is  : 10                                                                  |
+|    The string value is   : USD                                                                 |                                                                                                |
+|    The output should be  : 10USD                                                               |
+|                                                                                                |
+|    The second string value is   : Age                                                          |
+|    The second integer value is  : 22                                                           |
+|    The output should be         : Age22                                                        |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -188,7 +270,7 @@ public class Test {
 public class Test {
     public static void main(String[] args) {
 
-        double radius = 2.0;
+        double radius = 4.0;
         double circumference = 2 * Math.PI * radius;
         double area = Math.PI * radius * radius;
 
@@ -204,9 +286,9 @@ public class Test {
 |                                   OUTPUT                                                       |
 |                                                                                                |
 |````````````````````````````````````````````````````````````````````````````````````````````````|
-|   The radius is        :       2.00                                                            |
-|   The circumference is :    12.5664                                                            |
-|   The area is          :    12.5664                                                            |
+|   The radius is        :       4.00                                                            |
+|   The circumference is :    25.1327                                                            |
+|   The area is          :    50.2655                                                            |
 |                                                                                                |
 ``````````````````````````````````````````````````````````````````````````````````````````````````
 
@@ -233,6 +315,16 @@ public class Test {
 }
 
 
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     The number is                         :7530                                                |
+|     The last 2 digit of the number is     :30                                                  |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
 ================================================================================================================================================================
 
 
@@ -246,13 +338,23 @@ public class Test {
 public class Test {
     public static void main(String[] args) {
 
-        double inch = 7530;
+        double inch = 1000;
         double meter = inch * 0.0254;
 
-        System.out.printf("The number in inch is     :%.4f%n", inch );
-        System.out.printf("The number in meter is    :%.4f%n", meter);
+        System.out.printf("The number in inch is     :%10.2f%n", inch );
+        System.out.printf("The number in meter is    :%10.4f%n", meter);
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    The number in inch is     :   1000.00                                                       |
+|    The number in meter is    :   25.4000                                                       |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -273,7 +375,7 @@ public class Test {
 
         System.out.printf("Variable before the swap \n\n");
         System.out.printf("The number was        :%5d\n", a);
-        System.out.printf("The second number was :%5d\n\n\n ",b);
+        System.out.printf("The second number was :%5d\n\n\n",b);
 
         int temp = a;
         a = b;
@@ -281,14 +383,31 @@ public class Test {
 
         System.out.printf("Variable after the swap \n\n");
         System.out.printf("The number was        :%5d\n", a);
-        System.out.printf("The second number was :%5d\n\n ",b);
+        System.out.printf("The second number was :%5d\n\n",b);
 
     }
 }
 
 
-================================================================================================================================================================
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    Variable before the swap                                                                    |
+|                                                                                                |
+|    The number was        :   10                                                                |
+|    The second number was :   20                                                                |
+|                                                                                                |
+|                                                                                                |
+|    Variable after the swap                                                                     |
+|                                                                                                |
+|    The number was        :   20                                                                |
+|    The second number was :   10                                                                |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
+
+================================================================================================================================================================
 
 
 |````````````````````|
@@ -307,12 +426,12 @@ public class Test {
         
             System.out.printf("Variable before the swap \n\n");
             System.out.printf("The number was        :%5d\n", a);
-            System.out.printf("The second number was :%5d\n\n\n ",b);
+            System.out.printf("The second number was :%5d\n\n\n",b);
         
                
-            a = a + b;
-            b = a - b;
-            a = a - b;
+            a = a + b; // a = 18
+            b = a - b; // b = 7
+            a = a - b; // a = 11
         
             System.out.printf("Variable after the swap \n\n");
             System.out.printf("The number was        :%5d\n", a);
@@ -320,6 +439,24 @@ public class Test {
 
      }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Variable before the swap                                                                   |
+|                                                                                                |
+|     The number was        :    7                                                               |
+|     The second number was :   11                                                               |
+|                                                                                                |
+|                                                                                                |
+|     Variable after the swap                                                                    |
+|                                                                                                |
+|     The number was        :   11                                                               |
+|     The second number was :    7                                                               |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -335,7 +472,7 @@ public class Test {
 public class Test {
     public static void main(String[] args) {
         
-        long min = 75307530;
+        long min = 3456789;
 
         double total_days = min / (60 * 24);
 
@@ -343,9 +480,19 @@ public class Test {
         double days = total_days % 365;
 
         System.out.printf("Given Minute is   : %d\n", min);
-        System.out.printf("which is equal to : %d years & %d days\n", (int)years, (int)days);
+        System.out.printf("Which is equal to : %d years & %d days\n", (int)years, (int)days);
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Given Minute is   : 3456789                                                                |
+|     Which is equal to : 6 years & 210 days                                                     |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -367,10 +514,23 @@ public class Test {
 
         int d =( 2 * b *( ( c - a ) / 3 ) + 7);
 
-        System.out.println("The value of d is: " + d);
+        System.out.println("The value of a=" + a + " b=" + b + " c=" + c );
+        
+        System.out.println("\nThe value of d is: " + d);
         
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     The value of a=2 b=5 c=8                                                                   |
+|                                                                                                |
+|     The value of d is: 27                                                                      |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -388,18 +548,32 @@ public class Test {
 
         int sid = 24110031;
 
-        int last2_digit_sid = sid % 100;
-        int last_digit_sid = last2_digit_sid % 10;
-        int last_second_digit_sid = last2_digit_sid / 10;
+        int last_two_digit = sid % 100;
+        int last_digit = last_two_digit % 10;
+        int last_second_digit = last_two_digit / 10;
 
-        System.out.printf("\nMy SID is                    : %-9d\n", sid);
-        System.out.printf("Last digit of sid is         :%9d\n", last_digit_sid);
-        System.out.printf("Second Last digit of sid is  :%9d\n\n", last_second_digit_sid);
-        System.out.printf("Both digits together         :%9d\n", last2_digit_sid);
-        System.out.printf("Both digits reversed together:%8d%d\n\n", last_digit_sid, last_second_digit_sid);
+        System.out.printf("\nMy SID is                    :  %8d\n", sid);
+        System.out.printf("Last digit of sid is         :%10d\n", last_digit);
+        System.out.printf("Second Last digit of sid is  :%10d\n\n", last_second_digit);
+        System.out.printf("Both digits together         :%10d\n", last_two_digit);
+        System.out.printf("Both digits reversed together:%9d%d\n\n", last_digit, last_second_digit);
     
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     My SID is                    :  24110031                                                   |
+|     Last digit of sid is         :         1                                                   |
+|     Second Last digit of sid is  :         3                                                   |
+|                                                                                                |
+|     Both digits together         :        31                                                   |
+|     Both digits reversed together:        13                                                   |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
 
 
 ================================================================================================================================================================
@@ -412,3 +586,75 @@ public class Test {
 ``````````````````````
 
 
+public class Test {
+    public static void main(String[] args) {
+        double  a = 8.0;  //given
+        double  b = 3.0;  //given 
+
+        double c = (Math.sqrt(( Math.pow(a/2, 2) + Math.pow(b, 2) )));  //one side of Hexagon 
+        System.out.println("The side of Hexagon is          : " + c);
+
+        double area = (((3* Math.sqrt(3))/2) * c * c);
+        System.out.println("The area of Hexagon is          : " + area);
+
+        double circumference = (6 * c);
+        System.out.println("The circumference of Hexagon is : " + circumference);
+
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    The side of Hexagon is          : 5.0                                                       |
+|    The area of Hexagon is          : 64.9519052838329                                          |
+|    The circumference of Hexagon is : 30.0                                                      |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 20 |
+|                    |
+``````````````````````
+
+
+public class Test{
+    public static void main(String[] args) {
+        double a = 4.5; // given
+        double b = 9.5; // given
+
+        double c = Math.sqrt( Math.pow(a, 2) + Math.pow(b, 2) );
+
+        double SinA = a / c;
+        double CosA = b / c;
+        double SinB = b / c;
+        double CosB = a / c;
+
+        System.out.println("SinA: " + SinA);
+        System.out.println("CosA: " + CosA);
+        System.out.println("SinB: " + SinB);
+        System.out.println("CosB: " + CosB);
+
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    SinA: 0.42808634473904467                                                                   |
+|    CosA: 0.9037378388935388                                                                    |
+|    SinB: 0.9037378388935388                                                                    |
+|    CosB: 0.42808634473904467                                                                   |
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+==================================================================================================================================================================
