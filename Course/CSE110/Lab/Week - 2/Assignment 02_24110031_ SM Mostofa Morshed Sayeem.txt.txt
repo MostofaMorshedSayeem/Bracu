@@ -31,12 +31,13 @@ public class main {
             largest = b;
         } else {
             largest = c;
-
-            System.out.println("\nThe largest number is          : " + largest);
-
+            sc.close();
         }
 
+        System.out.println("\nThe largest number is          : " + largest);
+
     }
+
 }
 
 |````````````````````````````````````````````````````````````````````````````````````````````````|
@@ -64,12 +65,12 @@ public class main {
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the student's score: ");
+        System.out.printf("%-30s: ", "Enter the student's score");
         int score = sc.nextInt();
 
         String grade = "";
@@ -84,14 +85,218 @@ public class main {
             grade = "C";
         } else if (score >= 50 && score <= 56) {
             grade = "D";
-        } else if (score < 50) {
+        } else if (score >= 0 && score < 50) {
             grade = "F";
         } else {
             System.out.println("Invalid score");
             sc.close();
+            return;
         }
 
-        System.out.printf("The student's grade is: %s", grade);
-
+        System.out.printf("%-30s: %s", "Your grade is", grade);
+        sc.close();
     }
 }
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Enter the student's score     : 69                                                         | 
+|     Your grade is                 : C                                                          | 
+|                                                                                                |                                                                                              
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 3  |
+|                    |
+``````````````````````
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("%-35s: ", "Please enter an integer number");
+        int number = input.nextInt();
+
+        if (number % 5 == 0 && number % 7 != 0) {
+            System.out.println("Only divisible by 5");
+        } else if (number % 5 != 0 && number % 7 == 0) {
+            System.out.println("Only divisible by 7");
+        }
+
+        if ((number % 5 == 0) && (number % 7 == 0)) {
+            System.out.printf("Yes! The number %d is divisible by both 5 and 7%n", number);
+        } else {
+            System.out.printf("No! The number %d is not divisible by both 5 and 7%n", number);
+        }
+
+        input.close();
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Please enter an integer number     : 25                                                    |                                       
+|     Only divisible by 5                                                                        |                  
+|     No! The number 25 is not divisible by both 5 and 7                                         |                                               
+|                                                                                                | 
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Please enter an integer number     : 49                                                    |                                      
+|     Only divisible by 7                                                                        |                
+|     No! The number 49 is not divisible by both 5 and 7                                         |                                                                                                                                                 
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Please enter an integer number     : 11                                                    |                                    
+|     No! The number 11 is not divisible by both 5 and 7                                         |                                                 
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|     Please enter an integer number     : 245                                                   |                                       
+|     Yes! The number 245 is divisible by both 5 and 7                                           |                                                                                                                                               
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 4  |
+|                    |
+``````````````````````
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.printf("Please enter a year to check if it is a leap year or not: ");
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+
+        if (year % 4 == 0 && year % 100 != 0) {
+
+            System.out.printf("%d is a leap year", year);
+            sc.close();
+
+            if (year % 100 == 0 && year % 400 == 0) {
+
+                System.out.printf("%d is a leap year", year);
+                sc.close();
+
+            }
+
+        }
+
+        else {
+
+            System.out.printf("%d is not a leap year", year);
+            sc.close();
+
+        }
+
+    }
+
+}
+
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|   Please enter a year to check if it is a leap year or not: 2020                               |
+|   2020 is a leap year                                                                          |                   
+|                                                                                                |
+|   Please enter a year to check if it is a leap year or not: 2001                               |                                                           
+|   2001 is not a leap year                                                                      |                     
+|                                                                                                |
+|   Please enter a year to check if it is a leap year or not: 1900                               |                                                              
+|   1900 is not a leap year                                                                      |                      
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 5  |
+|                    |
+``````````````````````
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("Please enter a number: ");
+
+        int number = scanner.nextInt();
+
+        if (number < 0) {
+            System.out.println("Number is negative");
+        }
+        if (number == 0) {
+            System.out.println("Number is zero");
+        }
+        if (number > 0 && number % 2 == 0) {
+            System.out.println("Number is positive and even");
+        }
+        if (number > 0 && number % 2 != 0) {
+            System.out.println("Number is positive and odd");
+        }
+
+        scanner.close();
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|   Please enter a number: 38                                                                    |
+|   Number is positive and even                                                                  |
+|                                                                                                |                                                                                             
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                               
+|   Please enter a number: 33                                                                    | 
+|   Number is positive and odd                                                                   |
+|                                                                                                |                       
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                              
+|   Please enter a number: -100                                                                  |
+|   Number is negative                                                                           |
+|                                                                                                |                  
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                              
+|   Please enter a number: 0                                                                     |
+|   Number is zero                                                                               |
+|                                                                                                |                                                                                                              
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 6  |
+|                    |
+``````````````````````
+
