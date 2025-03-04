@@ -133,9 +133,7 @@ public class Main {
             System.out.println("Only divisible by 5");
         } else if (number % 5 != 0 && number % 7 == 0) {
             System.out.println("Only divisible by 7");
-        }
-
-        if ((number % 5 == 0) && (number % 7 == 0)) {
+        } else if ((number % 5 == 0) && (number % 7 == 0)) {
             System.out.printf("Yes! The number %d is divisible by both 5 and 7%n", number);
         } else {
             System.out.printf("No! The number %d is not divisible by both 5 and 7%n", number);
@@ -151,13 +149,11 @@ public class Main {
 |                                                                                                |
 |````````````````````````````````````````````````````````````````````````````````````````````````|
 |     Please enter an integer number     : 25                                                    |                                       
-|     Only divisible by 5                                                                        |                  
-|     No! The number 25 is not divisible by both 5 and 7                                         |                                               
+|     Only divisible by 5                                                                        |                                               
 |                                                                                                | 
 |````````````````````````````````````````````````````````````````````````````````````````````````|
 |     Please enter an integer number     : 49                                                    |                                      
-|     Only divisible by 7                                                                        |                
-|     No! The number 49 is not divisible by both 5 and 7                                         |                                                                                                                                                 
+|     Only divisible by 7                                                                        |                                                                                                                                                 
 |                                                                                                |
 |````````````````````````````````````````````````````````````````````````````````````````````````|
 |     Please enter an integer number     : 11                                                    |                                    
@@ -318,4 +314,282 @@ public class Main {
 ``````````````````````
 
 
-imp
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("%-30s : ", "Enter amount");
+        int amount = sc.nextInt();
+
+        System.out.printf("%-30s : ", "Enter age");
+        int age = sc.nextInt();
+
+        System.out.prinln();
+
+        if (amount < 10000 || age < 18) {
+            System.out.printf("%-30s : 0", "Your tax amounts in BDT is");
+        } else if (amount <= 20000) {
+            System.out.printf("%-30s : %.2f", "Your tax amounts in BDT is", (amount * (5.00 / 100)));
+        } else {
+            System.out.printf("%-30s : %.2f", "Your tax amounts in BDT is", (amount * (10.00 / 100)));
+        }
+
+        sc.close();
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    Enter amount                   : 9000                                                       |
+|    Enter age                      : 23                                                         |
+|                                                                                                |
+|    Your tax amounts in BDT is     : 0                                                          |                               
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                                
+|    Enter amount                   : 15000                                                      |
+|    Enter age                      : 17                                                         |
+|                                                                                                |
+|    Your tax amounts in BDT is     : 0                                                          |                            
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                                
+|    Enter amount                   : 15000                                                      |
+|    Enter age                      : 18                                                         |
+|                                                                                                |
+|    Your tax amounts in BDT is     : 750.00                                                     |                                 
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                                
+|   Enter amount                   : 30000                                                       |
+|   Enter age                      : 25                                                          |
+|                                                                                                |
+|   Your tax amounts in BDT is     : 3000.00                                                     |                                 
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 8  |
+|                    |
+``````````````````````
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printf("%-25s : ", "Enter the first Number");
+        float num1 = scanner.nextFloat();
+        
+        System.out.printf("%-25s : ", "Enter the second Number");
+        float num2 = scanner.nextFloat();
+
+        System.out.printf("%-25s : ", "Enter the third Number");
+        float num3 = scanner.nextFloat();
+
+        float print_max = 0;
+        float print_min = 0;
+
+        if (num1 > num2) {
+            if (num1 > num3) {
+                print_max = num1;
+            } else {
+                print_max = num3;
+            }
+        } else if (num2 > num3) {
+            print_max = num2;
+        } else {
+            print_max = num3;
+        }
+
+        if (num1 < num2) {
+            if (num1 < num3) {
+                print_min = num1;
+            } else {
+                print_min = num3;
+            }
+        } else if (num2 < num3) {
+            print_min = num2;
+        } else {
+            print_min = num3;
+        }
+        System.out.println();
+        System.out.printf("%-25s : %.2f%n", "Maximum number is", print_max);
+        System.out.printf("%-25s : %.2f%n", "Minimum number is", print_min);
+        
+        scanner.close();
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|    Enter the first Number    : 18.83                                                           |
+|    Enter the second Number   : -4.02                                                           |
+|    Enter the third Number    : 83.12                                                           |
+|                                                                                                |
+|    Maximum number is         : 83.12                                                           |   
+|    Minimum number is         : -4.02                                                           |                                 
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                               
+|   Enter the first Number    : 26.45                                                            |
+|   Enter the second Number   : 0.02                                                             |
+|   Enter the third Number    : 13.56                                                            |
+|                                                                                                |
+|   Maximum number is         : 26.45                                                            |
+|   Minimum number is         : 0.02                                                             |                                        
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+================================================================================================================================================================
+
+
+|````````````````````|
+|                    |
+| Question Number 9  |
+|                    |
+``````````````````````
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printf("%-30s : ", "Please enter first length");
+        int num1 = scanner.nextInt();
+
+        System.out.printf("%-30s : ", "Please enter second length");
+        int num2 = scanner.nextInt();
+
+        System.out.printf("%-30s : ", "Please enter third length");
+        int num3 = scanner.nextInt();
+
+        System.out.println();
+
+        if (num1 == num2 && num2 == num3) {
+            System.out.println("This is an Equilateral triangle");
+        } else if (num1 == num2 || num1 == num3 || num2 == num3) {
+
+                    System.out.println("This is an Isosceles triangle");
+                }
+        } else {
+
+            System.out.printf("This is a Scalene triangle");
+        }
+
+        scanner.close();
+    }
+}
+
+
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|                                   OUTPUT                                                       |
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|   Please enter first length      : 5                                                           |
+|   Please enter second length     : 2                                                           |
+|   Please enter third length      : 4                                                           |
+|                                                                                                |
+|   This is a Scalene triangle                                                                   |  
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|   Please enter first length      : 5                                                           |
+|   Please enter second length     : 5                                                           |
+|   Please enter third length      : 3                                                           |
+|                                                                                                |     
+|   This is an Isosceles triangle                                                                | 
+|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|
+|   Please enter first length      : 3                                                           |
+|   Please enter second length     : 3                                                           |
+|   Please enter third length      : 3                                                           |
+|                                                                                                |     
+|   This is an Equilateral triangle                                                              | 
+|                                                                                                |
+``````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printf("%-45s : ", "Please enter the amount to pay");
+        int amount_to_pay = scanner.nextInt();
+
+        System.out.printf("%-45s : ", "Please enter the amount customer has given");
+        int amount_given = scanner.nextInt();
+
+        if (amount_to_pay < amount_given) {
+            int change = amount_given - amount_to_pay;
+
+            System.out.printf("%-45s : %d %n", "The customer gets back BDT", change);
+
+            int hundred = 0, fifty = 0, twenty = 0, ten = 0, five = 0, two = 0, one = 0;
+
+            if (change >= 100) {
+                hundred = change / 100;
+                change = change % 100;
+            }
+            if (change >= 50) {
+                fifty = change / 50;
+                change = change % 50;
+            }
+            if (change >= 20) {
+                twenty = change / 20;
+                change = change % 20;
+            }
+            if (change >= 10) {
+                ten = change / 10;
+                change = change % 10;
+            }
+            if (change >= 5) {
+                five = change / 5;
+                change = change % 5;
+            }
+            if (change >= 2) {
+                two = change / 2;
+                change = change % 2;
+            }
+            if (change >= 1) {
+                one = change / 1;
+                change = change % 1;
+            }
+
+            System.out.printf("%-45s : %d %n", "100 taka note", hundred);
+            System.out.printf("%-45s : %d %n", "50 taka note", fifty);
+            System.out.printf("%-45s : %d %n", "20 taka note", twenty);
+            System.out.printf("%-45s : %d %n", "10 taka note", ten);
+            System.out.printf("%-45s : %d %n", "5 taka coin", five);
+            System.out.printf("%-45s : %d %n", "2 taka coin", two);
+            System.out.printf("%-45s : %d %n", "1 taka coin", one);
+        } else if (amount_to_pay > amount_given) {
+            System.out.printf("%-45s : %d %n", "The customer needs to pay more BDT", amount_to_pay - amount_given);
+        } else {
+            System.out.println("The returned ammount is 0 taka");
+        }
+
+        scanner.close();
+    }
+}
