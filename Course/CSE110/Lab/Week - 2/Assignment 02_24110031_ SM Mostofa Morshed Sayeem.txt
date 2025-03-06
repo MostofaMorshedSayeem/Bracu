@@ -215,7 +215,7 @@ public class Main {
 |   Please enter a year to check if it is a leap year or not: 2001                               |                                                           
 |   2001 is not a leap year                                                                      |                     
 |                                                                                                |
-|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                                |
+|````````````````````````````````````````````````````````````````````````````````````````````````|                                                                                                
 |   Please enter a year to check if it is a leap year or not: 1900                               |                                                              
 |   1900 is not a leap year                                                                      |                      
 |                                                                                                |
