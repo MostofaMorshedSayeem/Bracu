@@ -247,7 +247,7 @@ public class main {
 |    The output should be : HelloHuman                                                           |
 |                                                                                                |
 |    The integer value is  : 10                                                                  |
-|    The string value is   : USD                                                                 |                                                                                                |
+|    The string value is   : USD                                                                 |   
 |    The output should be  : 10USD                                                               |
 |                                                                                                |
 |    The second string value is   : Age                                                          |
