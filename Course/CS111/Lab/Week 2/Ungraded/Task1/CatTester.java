@@ -1,4 +1,4 @@
-public class Test7 {
+public class CatTester {
     public static void main(String[] args) {
         Cat c1 = new Cat();
         System.out.println("===================");
