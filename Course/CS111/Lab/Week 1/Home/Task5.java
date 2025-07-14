@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Task5 {
-    
+
     public static void printMap(int arr[][]) {
         for (int row[] : arr) {
             for (int val : row) {
@@ -12,7 +12,7 @@ public class Task5 {
         }
         System.out.println();
     }
-    
+
     public static String toUpper(String input) {
         String result = "";
         for (int i = 0; i < input.length(); i++) {
@@ -24,7 +24,7 @@ public class Task5 {
         }
         return result;
     }
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

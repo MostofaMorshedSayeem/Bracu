@@ -4,7 +4,9 @@ import java.util.*;
 public class Task3 {
     public static void main(String[] args) {
 
-            Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("N = ");
 
         int N = scanner.nextInt();
 
@@ -31,16 +33,10 @@ public class Task3 {
         for (int i = 0; i < index; i++) {
             System.out.print(new_original[i] + " ");
         }
-        
+
         System.out.println();
         System.out.println("Removed items : " + (original.length - index));
         scanner.close();
-
-
-
-
-
-
 
     }
 }

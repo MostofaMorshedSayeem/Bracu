@@ -6,7 +6,9 @@ public class Task4 {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("row = ");
         int row = scanner.nextInt();
+        System.out.print("column = ");
         int col = scanner.nextInt();
 
         int array_2d[][] = new int[row][col];
@@ -24,8 +26,21 @@ public class Task4 {
                 array_1d[index++] = array_2d[i][j];
             }
         }
+        System.out.println("2D array: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (j == col - 1) {
+                    System.out.print(array_2d[i][j]);
+                } else {
+                    System.out.print(array_2d[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
 
-        System.out.println("New array: ");
+        System.out.println();
+
+        System.out.println("1D array: ");
         for (int i = 0; i < array_1d.length; i++) {
             if (i == array_1d.length - 1) {
                 System.out.print(array_1d[i]);
